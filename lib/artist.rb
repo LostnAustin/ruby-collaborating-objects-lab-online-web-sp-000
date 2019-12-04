@@ -28,7 +28,7 @@ class Artist
     #  artist =  @@all.find {|n| n.name == artist_name}
   #      return artist if artist
   #      artist = Artist.new(artist_name)
-  @@all.find {|n| n.name == artist_name || Artist.new(artist_name) }
+  @@all.find {|n| n.name == artist_name} || Artist.new(artist_name)
   end
 
   def print_songs
