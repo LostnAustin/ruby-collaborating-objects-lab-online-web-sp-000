@@ -25,7 +25,7 @@ end
 
     def artist_name(artist_name)
       binding.pry
-      @@all.find {|n| n == self.artist_name} || Song.new(artist_name)
+      @@all.find {|n| n.name == artist_name} || Artist.new(artist_name)
 
 
     end
