@@ -21,6 +21,7 @@ end
 #binding.pry
   song = Song.new(filename.split(" - ")[1])
   song.artist_name=(filename.split(" - ")[0])
+  song
 end
 
     def artist_name=(artist_name)
