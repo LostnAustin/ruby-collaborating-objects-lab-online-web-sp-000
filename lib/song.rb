@@ -24,10 +24,8 @@ end
 end
 
     def artist_name=(artist_name)
-      @artist_name = artist_name
-      binding.pry
-      @@all.find {|n| n.name == artist_name} || Artist.new(artist_name)
 
+    artist = Artist.find_or_create_by_name(artist_name)
 
     end
 
